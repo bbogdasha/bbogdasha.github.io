@@ -1,12 +1,334 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Portfolio</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Portfolio S.B.</title>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+		<script src="https://kit.fontawesome.com/43613b5b41.js" crossorigin="anonymous"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery.isotope.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/jquery.parallax-1.1.3.js"></script>
+		<script src="js/waypoints.js"></script>
+		<script src="js/script.js"></script>
 	</head>
 	<body>
-		<div class="text">
-			HERE WILL BE MY PORTFOLIOS
-		</div>
+		<!-- HEADER SECTION -->
+		<header id="home" class="screen-height">
+			<nav id="nav-wrap">
+				<ul id="nav">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Projects</a></li>
+					<li><a href="#experience">Education</a></li>
+					<li><a href="#skills">Technical skills</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="row banner">
+				<div class="banner-text">
+					<h1 class="greeting">Hi, my name is</h1>
+					<h1 class="greeting">Statyva Bogdan</h1>
+					<hr />
+					<p>I am a 5th year student, specialty Cybersecurity. I study and work in Java programming language.<p>
+				</div>
+			</div>
+		</header>
+
+		<!-- ABOUT SECTION -->
+		<section id="about">
+			<div class="row">
+				<h2>About Me</h2>
+				<div class="column column-main">
+					<div>
+						<p>Hi, my name is Bogdan, I am from Ukraine, the city of Dnipro. Currently I am studying at the 5th year of specialty Cyber Security at Dnipro University of Technology. The desire to study and work in the IT field appeared back in my school years, and from the first year at the university I first got to know the C ++ programming language, and this desire has only strengthened. But a year later I decided to start learning the Java programming language, and I still study it and improve my skills. <a href="#experience">Courses</a>, online lectures, a marathon and my own desire to learn helped me in my studies. Experience of working in a team. Experience of working on a full working project is not yet available.</p>
+					</div>
+					<div class="contact-details">
+						<h2>Contact Details</h2>
+						<p class="address">
+							<span>Statyva Bogdan</span><br>
+							<span>Ukraine, city of Dnipro<br>
+							49130
+							</span><br>
+							<span>+38(067)637-59-09</span><br>
+							<span>b.statyva@gmail.com</span>
+						</p>
+					</div>
+				</div> 
+				<div class="column column-download">
+					<div>
+						<p><img class="profile-img"  src="img/avatar.jpg" alt="" /></p>
+					</div>
+					<div class="about-social">
+						<ul>
+							<li><a href="https://github.com/bbogdasha"><i class="fab fa-github"></i></a></li>
+							<li><a href="https://t.me/bogdash_st"><i class="fab fa-telegram-plane"></i></a></li>
+							<li><a href="https://www.facebook.com/BoBogdasha/"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+							<li><a href="https://www.instagram.com/bogdasha_st/"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="mailto:b.statyva@gmail.com"><i class="fab fa-google"></i></a></li>
+						</ul>
+					</div>
+					<div class="button">
+						<a href="directory/Bogdan Statyva CV.pdf" download="newfilename" target="_blank">Download Resume</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- PORTFOLIO SECTION -->
+		<section id="portfolio">
+			<div class="row">
+				<div class="p-info">
+					<h2>My Portfolio</h2>
+					<hr>
+					<p>Some of my projects are collected here and will certainly be replenished in the future. All repositories can be viewed on my <a href="https://github.com/bbogdasha">GitHub page</a>.</p>
+				</div>
+				<div class="categories">
+					<ul class="categories-ul">
+						<li>
+						<ol class="type">
+							<li><a href="#" data-filter="*" class="active">All Projects</a></li>
+							<li><a href="#" data-filter=".java">Java Core</a></li>
+							<li><a href="#" data-filter=".spring">Spring Framework</a></li>
+							<li><a href="#" data-filter=".heroku">Heroku</a></li>
+						</ol>
+						</li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+
+				<div class="row">
+					<div class="portfolio-items">
+						<div class="p-item spring">
+							<div class="portfolio-item">
+								<div class="hover-bg"> <a href="https://github.com/bbogdasha/springWebApp" target="_blank" title="Project description">
+									<div class="hover-text">
+										<h4>Spring Framework</h4>
+										<small>Recipes site</small>
+										<div class="clearfix"></div>
+									</div>
+									<img src="img/portfolio/spring-icon.png" class="img-responsive" alt="Project Title"> </a> 
+								</div>
+							</div>
+						</div>
+
+						<div class="p-item heroku">
+							<div class="portfolio-item">
+								<div class="hover-bg"> <a href="https://spring-recipe-app-sb.herokuapp.com" target="_blank" title="Project description">
+									<div class="hover-text">
+										<h4>Spring Framework</h4>
+										<small>Recipes site on Heroku</small>
+										<div class="clearfix"></div>
+									</div>
+									<img src="img/portfolio/heroku-icon.png" class="img-responsive" alt="Project Title"> </a>
+								</div>
+							</div>
+						</div>
+
+						<div class="p-item spring">
+							<div class="portfolio-item">
+								<div class="hover-bg"> <a href="https://github.com/bbogdasha/springSimpleWeb" target="_blank" title="Project description">
+									<div class="hover-text">
+										<h4>Spring Framework</h4>
+										<small>Base CRUD</small>
+										<div class="clearfix"></div>
+									</div>
+									<img src="img/portfolio/spring-icon.png" class="img-responsive" alt="Project Title"> </a> 
+								</div>
+							</div>
+						</div>
+
+						<div class="p-item java">
+							<div class="portfolio-item">
+								<div class="hover-bg"> <a href="https://github.com/bbogdasha/postgresqlManyToMany" target="_blank" title="Project description">
+									<div class="hover-text">
+										<h4>PostgreSQL</h4>
+										<small>Many To Many</small>
+										<div class="clearfix"></div>
+									</div>
+									<img src="img/portfolio/java-icon.png" class="img-responsive" alt="Project Title"> </a> 
+								</div>
+							</div>
+						</div>
+
+						<div class="p-item java">
+							<div class="portfolio-item">
+								<div class="hover-bg"> <a href="https://github.com/bbogdasha/canvasJavaFX" target="_blank" title="Project description">
+									<div class="hover-text">
+										<h4>JavaFX</h4>
+										<small>Simple Canvas</small>
+										<div class="clearfix"></div>
+									</div>
+									<img src="img/portfolio/java-icon.png" class="img-responsive" alt="Project Title"> </a> 
+								</div>
+							</div>
+						</div>
+
+						<div class="p-item java">
+							<div class="portfolio-item">
+								<div class="hover-bg"> <a href="https://github.com/bbogdasha/postgresqlCRUD" target="_blank" title="Project description">
+									<div class="hover-text">
+										<h4>PostgreSQL</h4>
+										<small>CRUD operations</small>
+										<div class="clearfix"></div>
+									</div>
+									<img src="img/portfolio/java-icon.png" class="img-responsive" alt="Project Title"> </a> 
+								</div>
+							</div>
+						</div>
+
+						<div class="p-item java">
+							<div class="portfolio-item">
+								<div class="hover-bg"> <a href="https://github.com/bbogdasha/conversionJSON" target="_blank" title="Project description">
+									<div class="hover-text">
+										<h4>JSON</h4>
+										<small>Deserialization and Serialization</small>
+										<div class="clearfix"></div>
+									</div>
+									<img src="img/portfolio/jx-icon.png" class="img-responsive" alt="Project Title"> </a> 
+								</div>
+							</div>
+						</div>
+
+						<div class="p-item java">
+							<div class="portfolio-item">
+								<div class="hover-bg"> <a href="https://github.com/bbogdasha/conversionXML" target="_blank" title="Project description">
+									<div class="hover-text">
+										<h4>XML</h4>
+										<small>Deserialization and Serialization</small>
+										<div class="clearfix"></div>
+									</div>
+									<img src="img/portfolio/jx-icon.png" class="img-responsive" alt="Project Title"> </a> 
+								</div>
+							</div>
+						</div>
+
+						<div class="p-item java">
+							<div class="portfolio-item">
+								<div class="hover-bg"> <a href="https://github.com/bbogdasha/currencyConverter" target="_blank" title="Project description">
+									<div class="hover-text">
+										<h4>Currency Converter</h4>
+										<small>JSON, FXML</small>
+										<div class="clearfix"></div>
+									</div>
+									<img src="img/portfolio/java-icon.png" class="img-responsive" alt="Project Title"> </a> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- EXPERIENCE SECTION -->
+		<section id="experience" class="experience">
+			<div class="row timeline-content">
+				<h1>Education Timeline</h1>
+				<ul class="timeline">
+					<li class="event" data-date="From 2016 - present">
+						<h3>Dnipro University of Technology</h3>
+						<p>Information Technology Faculty.</p>
+						<p>Specialty: Information and telecommunication security, Cybersecurity.</p>
+					</li>
+
+					<li class="event" data-date="06.2018-10.2018">
+						<h3>Hillel IT School</h3>
+						<p>Front-end development, HTML / CSS / JS</p>    
+					</li>
+
+					<li class="event" id="date" data-date="03.2019-08.2019">
+						<h3>Hillel IT School</h3>
+						<p>Java Core, Java 8, Spring Framework</p>   
+					</li>
+
+					<li class="event" data-date="08.2020-11.2020">
+						<h3>SoftServe Company</h3>
+						<p>Java Online Marathon (Includes 19 sprints)<p/>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- SKILLS SECTION -->
+		<section id="skills" class="skills">
+			<div class="row skills-content">
+				<h2>Technical Skills:</h2>
+				<ul class="skills-list">
+					<li>Java Core</li>
+					<li>Spring framework</li>
+					<li>Hibernate</li>
+					<li>Tomcat</li>
+					<li>PostgreSQL / MySQL</li>
+					<li>Maven / Gradle</li>
+					<li>Thymeleaf, JSP</li>
+					<li>JSON / XML</li>
+					<li>HTML / CSS / JS</li>
+					<li>GIT</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- CONTACT SECTION -->
+		<section id="contact" class="contact">
+			<div class="row">
+				<div class="contact-info">
+					<h2 class="contact-title">Drop me a line</h2>
+					<div class="contact-line"></div>
+				</div>
+
+				<div class="contact-form">
+					<form id="contact-form" role="form">
+						<div class="form-group">
+							<label class="form-l" for="c_name">Name</label>
+							<input class="form-control" type="text" id="c_name" name="c_name" placeholder="Name">
+						</div>
+
+						<div class="form-group" data-wow-delay=".1s">
+							<label class="form-l" for="c_email">Email</label>
+							<input class="form-control" type="email" id="c_email" name="c_email" placeholder="E-mail">
+						</div>
+
+						<div class="form-group" data-wow-delay=".2s">
+							<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Message"></textarea>
+						</div>
+						<div class="contact-line"></div>
+						<button type="submit" class="button" data-wow-delay=".3s">Send Message</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!-- FOOTER SECTION -->
+		<footer class="footer">
+			<div class="footer-social">
+				<div class="row">
+					<div class="footer-social-content">
+						<ul class="social">
+							<li><a href="https://github.com/bbogdasha" target="_blank"><i class="fab fa-github"></i></a></li>
+							<li><a href="https://t.me/bogdash_st" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+							<li><a href="https://www.facebook.com/BoBogdasha/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+							<li><a href="https://www.instagram.com/bogdasha_st/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="mailto:b.statyva@gmail.com" target="_blank"><i class="fab fa-google"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-end">
+				<div class="row">
+					<div class="footer-end-text">
+						<p>Created by <a href="#">Statyva Bogdan</a> in 2020 year.<br> Images from Firewatch.</p>
+					</div>
+				</div>				
+			</div>
+		</footer>
+
 	</body>
 </html>
