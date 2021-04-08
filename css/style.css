@@ -352,6 +352,11 @@ a, a:visited {
     text-align: center;
 }
 
+#portfolio .categories-ul,
+#portfolio .type {
+    padding-left: 0px;
+}
+
 #portfolio ul.categories-ul li {
     display: inline-block;
 }
@@ -433,6 +438,7 @@ a, a:visited {
 }
 
 .portfolio-item {
+    border: 1px solid grey;
     margin-bottom: 30px;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
