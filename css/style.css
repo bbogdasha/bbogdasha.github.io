@@ -440,6 +440,7 @@ a, a:visited {
 .portfolio-item {
     border: 1px solid grey;
     margin-bottom: 30px;
+    background-color: white;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     -ms-transition: all 0.5s ease-out;
